@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-  background-image: url('./assets/background-noise.svg');
-  background-repeat: repeat;
   background-color: #111111;
+}
+
+.bottomRight {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 h1 {
@@ -16,4 +20,19 @@ h1 {
   margin-left: -100px; /* margin is -0.5 * dimension */
   margin-top: -25px;
   font-family: Roboto, sans-serif;
+}
+
+img {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  bottom: 0px;
+  right: 0px;
+  transition-property: width, height;
+  transition-duration: 95ms;
+}
+
+img:hover {
+  width: 150px;
+  height: 150px;
 }
